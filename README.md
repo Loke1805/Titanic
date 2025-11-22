@@ -24,33 +24,6 @@ Matplotlib	                Basic Visualization
 Seaborn                   	Advanced Visualization
 Jupyter Notebook           	Running Analysis
 
-📌 Step-by-Step Workflow
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-df = pd.read_csv("titanic_1000.csv")
-df.head()
-df.info()
-df.describe()
-df.isnull().sum()
-df['Age'].fillna(df['Age'].median(), inplace=True)
-df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
-df.drop_duplicates(inplace=True)
-
-📊 Visual Exploratory Data Analysis (EDA)
-*Age Distribution
-sns.histplot(df['Age'], kde=True)
-*Gender Count
-sns.countplot(x='Sex', data=df)
-*Survival by Gender
-sns.countplot(x='Sex', hue='Survived', data=df)
-*Survival by Class
-sns.countplot(x='Pclass', hue='Survived', data=df)
-*Correlation Heatmap
-sns.heatmap(df.corr(), annot=True)
-*Pairplot
-sns.pairplot(df[['Age', 'Fare', 'SibSp', 'Parch', 'Survived']], hue='Survived')
-
 📈 Key Insights
 🔍 Overall Findings:
 *Most passengers were aged 20–40.
