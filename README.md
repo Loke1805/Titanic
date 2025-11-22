@@ -4,7 +4,7 @@ A complete Exploratory Data Analysis (EDA) project performed on a 1000-row Titan
 This project includes data cleaning, preprocessing, visualizations, insights, and summary findings using Python.
 
 📁 Dataset
-The dataset used in this project:
+The dataset used in this project:-
 ➡️ titanic_1000.csv
 (Generated with 1000 synthetic passenger records for learning & practice)
 
